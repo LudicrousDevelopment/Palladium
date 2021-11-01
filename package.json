@@ -1,0 +1,21 @@
+{
+  "name": "smoke-20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^18.0.0",
+    "mime": "^2.5.2",
+    "ws": "^8.2.3"
+  }
+}
