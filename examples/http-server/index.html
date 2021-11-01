@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palladium</title>
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/fognetwork/smoke/public/assets/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+      @font-face {
+        font-family: "Garamond Pro";
+        src: url('agaramondpro.otf')
+      }
+
+
+      body {
+        background: #1d232b;
+        color: #fff;
+        text-align: center;
+        font-family: "Garamond Pro", sans-serif
+      }
+
+      .page-container {
+        width: 90%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 500px;
+        border: 1px #eee;
+        border-radius: 2px;
+      }
+
+      #about-title1 {
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 28px;
+      }
+
+      #about-desc1 {
+        text-align: center;
+      }
+
+      .fab {
+        margin-right: 3px !important;
+      }
+
+      #github {
+        color: white;
+        font-size: 30px;
+      }
+
+      .title {
+        font-size: 45px;
+        margin-left: 10px;
+      }
+
+      #url-input {
+        margin-top: 20px;
+        background: #1e2022;
+        border: 1px solid rgb(136, 136, 136);
+        height: 40px;
+        margin-left: 10px;
+        padding-left: 10px;
+        width: calc(100% - 80px);
+        color: #fff;
+        outline: none;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      #url-input::placeholder {
+        color: #bbb;
+        font-size: 15px;
+        
+      }
+
+      #url-input:hover {
+        background: #2d3033;
+      }
+
+      #url-input:focus {
+        background: #2d3033;
+      }
+
+      #initiate {
+        vertical-align: top;
+        height: 44px;
+        margin-top: 20px;
+        outline: none;
+        width: 40px;
+        margin-left: 5px;
+        color: #eee;
+        font-size: 15px;
+        border: 1px solid rgb(136, 136, 136);
+        background: #1e2022;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      #initiate:hover {
+        cursor: pointer;
+        background: #2d3033;
+      }
+
+      .container-main {
+        background: #181c20;
+        border-radius: 1px;
+        border: 1px solid rgb(136, 136, 136);
+        padding: 28px 0px;
+        text-align: left;
+        width: 100%;
+        height: auto;
+      }
+
+      #error-disc {
+        text-align: center;
+        /*margin-top: 0;*/
+        padding: 15px;
+        margin-top: 17px !important;
+        background: rgb(217, 137, 137);
+        width: calc(100% - 52px);
+        margin: auto;
+        display: none;
+        border: 1px solid;
+        border-color: rgb(236, 236, 236)
+      }
+
+      .fab {
+        display: inline-block;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <form class="container-main" method="POST" action="/service/gateway">
+        <center>
+        <span class="title">Palladium</span>
+        </center>
+        <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate">Go</button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
+        <center>
+          <a href="/service/gateway/?url=https://www.google.com/"><i class="fab fa-google" style="color: white;font-size:30px;"></i></a>
+          <a href="/service/gateway/?url=https://youtube.com"><i class="fab fa-youtube" style="color: red;font-size:30px;"></i></a>
+          <a href="/service/gateway/?url=https://discord.com/app"><i class="fab fa-discord" style="color: #5165f6;font-size:30px;"></i></a>
+          <a href="/service/gateway/?url=https://reddit.com"><i class="fab fa-reddit" style="color: #f24100;font-size:30px;"></i></a>
+          <a href="/service/gateway/?url=https://twitch.tv"><i class="fab fa-twitch" style="color: #8a43f2;font-size:30px;"></i></a>
+        </center>
+        <p id="about-desc1">Palladium is a web proxy developed by <a style=text-decoration:none;color:#fff;font-weight:bold; href="//github.com/EnderKingJ">EnderKingJ</a>
+        <center>
+        <a id="github" href="https://github.com/FogNetwork/Palladium"><i class="fab fa-github"></i></a>
+        </center>
+        <datalist id="urls">
+            <option>https://google.com</option>
+            <option>https://youtube.com</option>
+            <option>https://discord.com</option>
+            <option>https://reddit.com</option>
+            <option>https://twitch.tv</option>
+        </datalist>
+      </form>
+    </div>
+  </body>
+</html>
