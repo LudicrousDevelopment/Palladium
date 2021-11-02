@@ -1,2 +1,2 @@
-run = "node ./examples/http-server"
+run = "node ./examples/express-server"
 language = "node"
