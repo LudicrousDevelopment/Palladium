@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+const Server = require('http').Server(app)
+
 const Smoke = new (require('../../lib/server'))({
   prefix: '/service/',
   encode: 'plain',
@@ -9,6 +11,6 @@ const Smoke = new (require('../../lib/server'))({
 
 app.use(express.static(__dirname+'/', {extensions: ['html']}))
 
-app.use(Smoke.express(Smoke))
+app.use(Smoke.express(Smoke, Server))
 
-app.listen(8080)
+Server.listen(8080)

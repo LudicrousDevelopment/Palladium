@@ -13,4 +13,4 @@ const proxy = new Palladium({
 
 proxy.clientScript().ws(Server)
 
-Server.on('request', (req, res) => {if(req.url.startsWith(proxy.prefix)){return proxy.request(req, res)}else{return res.end(fs.readFileSync(__dirname+'/index.html'))}}).on('upgrade', (req, socket, head) => proxy.upgrade(req, socket, head)).listen(8080);
+Server.on('request', (req, res) => {if(req.url.startsWith(proxy.prefix)){return proxy.request(req, res)}else{return res.end(fs.readFileSync(__dirname+'/index.html'))}})/*.on('upgrade', (req, socket, head) => proxy.upgrade(req, socket, head))*/.listen(8080);
