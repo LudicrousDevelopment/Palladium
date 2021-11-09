@@ -112,7 +112,6 @@ class Base {
     this.ctx = ctx
   }
   url(url, ext) { 
-    if (url.match(/^(javascript:|about:|mailto:|data:|blob:|#)/gi)) return url
     url = url.replace(/^\/\//, 'https://')
 
     try{url = url.replace(location.origin, new URL(ctx.url).origin)}catch{}

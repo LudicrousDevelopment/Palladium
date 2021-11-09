@@ -1,5 +1,5 @@
 {
-  "name": "smoke-20",
+  "name": "Palladium",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +8,10 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./examples/express-server"
   },
   "keywords": [],
-  "author": "",
+  "author": "EnderKingJ",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

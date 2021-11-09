@@ -1,12 +1,3 @@
 {
-  "files": {
-    "lib/client/location.js": [
-      {
-        "id": "dfa31dba-9a44-4cd6-a925-741014d8a3d2",
-        "line": 21,
-        "version": 1067,
-        "index": 1100
-      }
-    ]
-  }
+  "files": {}
 }
