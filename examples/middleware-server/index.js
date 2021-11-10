@@ -10,6 +10,9 @@ const proxy = new Palladium({
   prefix: config.prefix,
   encode: "plain",
   ssl: true,
+  requestMiddleware: [
+    Palladium.blackList(['discord.com', 'among.us'], 'Site is Blocked by Host')
+  ],
   debug: false,
 })
 
