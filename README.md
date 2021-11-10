@@ -21,7 +21,7 @@ const proxy = new Palladium(); //default config
 const http = require("http");
 ```
 ### Config
-```json
+```js
 {
   "prefix": "/service/",
   "ssl": true,
