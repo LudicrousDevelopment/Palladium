@@ -14,7 +14,7 @@ Somewhat Supported, Errors: Reddit bug, can play video but navigating to other p
 ## Setup
 ### Importing and Initiating
 ```js
-const Palladium = require("./lib/server");
+const Palladium = require("palladiumub");
 
 const proxy = new Palladium(); //default config
 
@@ -46,7 +46,7 @@ server.on("request", (req, res) => {
 ### End Result
 `index.js`
 ```js
-const Palladium = require("./lib/server");
+const Palladium = require("palladiumub");
 
 const proxy = new Palladium({
   "prefix": "/service/",

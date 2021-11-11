@@ -1,7 +1,9 @@
 const http = require("http");
 const https = require("https");
 const fs = require("fs");
-const config = require('./config.json')
+const config = {
+  "prefix": "/service/"
+}
 
 const Palladium = require("../../lib/server");
 const Server = http.Server()
