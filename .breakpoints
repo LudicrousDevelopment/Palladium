@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "lib/server/handleRequest.js": [
+      {
+        "id": "7ec93281-3fc2-47d1-a02b-5635fece6d5d",
+        "line": 71,
+        "version": 3320,
+        "index": 2569
+      }
+    ]
+  }
 }
