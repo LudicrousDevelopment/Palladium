@@ -1,5 +1,5 @@
 {
-  "name": "Palladium",
+  "name": "palladiumub",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node ./examples/express-server"
+    "start": "node ./examples/http-server"
   },
   "keywords": [],
   "author": "EnderKingJ",
@@ -17,7 +17,6 @@
     "express": "^4.17.1",
     "jsdom": "^18.0.0",
     "mime": "^2.5.2",
-    "node-fetch": "^3.0.0",
     "ws": "^8.2.3"
   }
 }
