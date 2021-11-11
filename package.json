@@ -18,5 +18,9 @@
     "jsdom": "^18.0.0",
     "mime": "^2.5.2",
     "ws": "^8.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LudicrousDevelopment/Palladium"
   }
 }
