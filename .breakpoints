@@ -1,11 +1,27 @@
 {
   "files": {
+    "lib/client/element.js": [
+      {
+        "id": "528dfe71-d350-4b21-96cb-8309f7d45896",
+        "line": 169,
+        "version": 1324,
+        "index": 7246
+      }
+    ],
     "lib/server/handleRequest.js": [
       {
         "id": "7ec93281-3fc2-47d1-a02b-5635fece6d5d",
-        "line": 71,
-        "version": 3320,
-        "index": 2569
+        "line": 174,
+        "version": 5827,
+        "index": 7141
+      }
+    ],
+    "lib/server/websocket.js": [
+      {
+        "id": "7d6a30b1-36ea-4fa7-a50e-41152a3f5065",
+        "line": 30,
+        "version": 1366,
+        "index": 1118
       }
     ]
   }
