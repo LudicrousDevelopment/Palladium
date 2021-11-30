@@ -8,12 +8,28 @@
         "index": 7246
       }
     ],
+    "lib/client/xml.js": [
+      {
+        "id": "50ac4516-a4cd-4977-bc66-32bdb2d88228",
+        "line": 57,
+        "version": 2469,
+        "index": 1946
+      }
+    ],
+    "lib/rewrites/base.js": [
+      {
+        "id": "9266e5f1-752c-4a35-889a-dc389fd29be1",
+        "line": 35,
+        "version": 2983,
+        "index": 997
+      }
+    ],
     "lib/server/handleRequest.js": [
       {
         "id": "7ec93281-3fc2-47d1-a02b-5635fece6d5d",
-        "line": 174,
-        "version": 5827,
-        "index": 7141
+        "line": 179,
+        "version": 6187,
+        "index": 7331
       }
     ],
     "lib/server/websocket.js": [

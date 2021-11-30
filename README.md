@@ -9,10 +9,12 @@ Made by EnderKingJ
 <a href="https://glitch.com/edit/#!/import/github/FogNetwork/Palladium"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
 
 ## Supported Sites
+### Github
+Supported + Login (Some Parts of Dashboard Unsupported
 ### Discord
-Unsupported, Errors: Unknown Errors In App
+Supported
 ### Reddit
-Somewhat Supported, Errors: Redirects to unproxified URL but still works
+Mostly Supported
 ### Youtube
 Somewhat Supported, Errors: Reddit bug, can play video but navigating to other pages requires opening in new tab
 
