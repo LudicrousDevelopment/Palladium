@@ -11,9 +11,7 @@ const Server = http.Server()
 const Corrosion = new (require('../../corrosion-heroku/lib/server'))({
   codec: 'xor',
   prefix: '/service/',
-  requestMiddleware: [
-    require('../../corrosion/server').middleware.https()
-  ]
+  requestMiddleware: []
 })
 
 const proxy = new Palladium({

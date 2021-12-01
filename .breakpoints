@@ -19,9 +19,9 @@
     "lib/rewrites/base.js": [
       {
         "id": "9266e5f1-752c-4a35-889a-dc389fd29be1",
-        "line": 54,
-        "version": 3019,
-        "index": 1609
+        "line": 70,
+        "version": 3927,
+        "index": 2258
       }
     ],
     "lib/server/handleRequest.js": [
@@ -35,9 +35,9 @@
     "lib/server/websocket.js": [
       {
         "id": "7d6a30b1-36ea-4fa7-a50e-41152a3f5065",
-        "line": 40,
-        "version": 1440,
-        "index": 1481
+        "line": 94,
+        "version": 1738,
+        "index": 3737
       }
     ]
   }
