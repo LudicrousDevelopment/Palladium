@@ -16,7 +16,7 @@ const Corrosion = new (require('../../corrosion-heroku/lib/server'))({
 
 const proxy = new Palladium({
   prefix: config.prefix,
-  encode: "xor",
+  encode: "plain",
   ssl: true,
   requestMiddleware: [
     Palladium.blackList(['example.org', 'among.us'], 'Site is Blocked by Host')

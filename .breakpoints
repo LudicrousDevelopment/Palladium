@@ -3,33 +3,33 @@
     "lib/client/element.js": [
       {
         "id": "528dfe71-d350-4b21-96cb-8309f7d45896",
-        "line": 169,
-        "version": 1324,
-        "index": 7246
+        "line": 174,
+        "version": 1426,
+        "index": 7533
       }
     ],
     "lib/client/xml.js": [
       {
         "id": "50ac4516-a4cd-4977-bc66-32bdb2d88228",
-        "line": 89,
-        "version": 3043,
-        "index": 2705
+        "line": 86,
+        "version": 3055,
+        "index": 2415
       }
     ],
     "lib/rewrites/base.js": [
       {
         "id": "9266e5f1-752c-4a35-889a-dc389fd29be1",
         "line": 70,
-        "version": 3927,
-        "index": 2258
+        "version": 4279,
+        "index": 2350
       }
     ],
     "lib/server/handleRequest.js": [
       {
         "id": "7ec93281-3fc2-47d1-a02b-5635fece6d5d",
         "line": 174,
-        "version": 6195,
-        "index": 7150
+        "version": 6516,
+        "index": 7069
       }
     ],
     "lib/server/websocket.js": [
