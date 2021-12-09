@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node ./examples/aero-trol"
+    "start": "node ./examples/aero-troll"
   },
   "keywords": [],
   "author": "EnderKingJ",
