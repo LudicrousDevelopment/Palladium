@@ -3,25 +3,31 @@
     "lib/client/element.js": [
       {
         "id": "528dfe71-d350-4b21-96cb-8309f7d45896",
-        "line": 174,
-        "version": 1426,
-        "index": 7533
+        "line": 188,
+        "version": 1494,
+        "index": 7937
       }
     ],
     "lib/client/xml.js": [
       {
         "id": "50ac4516-a4cd-4977-bc66-32bdb2d88228",
-        "line": 86,
-        "version": 3055,
-        "index": 2415
+        "line": 93,
+        "version": 3290,
+        "index": 2587
       }
     ],
     "lib/rewrites/base.js": [
       {
+        "id": "8edd9089-a8e0-403c-bce3-e8d7866ebdc2",
+        "line": 14,
+        "version": 4644,
+        "index": 333
+      },
+      {
         "id": "9266e5f1-752c-4a35-889a-dc389fd29be1",
-        "line": 70,
-        "version": 4279,
-        "index": 2350
+        "line": 78,
+        "version": 4644,
+        "index": 2640
       }
     ],
     "lib/server/handleRequest.js": [
