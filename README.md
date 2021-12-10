@@ -41,7 +41,7 @@ Somewhat Supported, Errors: Reddit bug, can play video but navigating to other p
 ## Setup
 ### Importing and Initiating
 ```js
-const Palladium = require("palladiumub");
+const Palladium = require("palladiumub"); //Outdated package, change to lib/server folder path
 
 const proxy = new Palladium(); //default config
 
