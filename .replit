@@ -1,2 +1,2 @@
-run = "node ./examples/corrosion-server"
+run = "node ./examples/middleware-server"
 language = "node"

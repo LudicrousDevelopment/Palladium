@@ -22,7 +22,7 @@ const proxy = new Palladium({
     Palladium.blackList(['example.org', 'among.us'], 'Site is Blocked by Host')
   ],
   debug: false,
-  Corrosion: [true, Corrosion],
+  //Corrosion: [true, Corrosion],
   server: Server,
 })
 
