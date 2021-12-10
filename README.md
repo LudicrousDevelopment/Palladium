@@ -8,6 +8,26 @@ Made by EnderKingJ
 <a href="https://repl.it/github/FogNetwork/Palladium"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
 <a href="https://glitch.com/edit/#!/import/github/FogNetwork/Palladium"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
 
+## Speed (Discord)
+### Palladium is the fastest proxy, severely beating Corrosion by 3x, Alloy - No Discord Support, Womginx - 1.3x
+
+## Done
+- hCaptcha Support
+- Discord Support
+- Reddit Support
+- Websocket Support
+- Cookie Rewrites
+
+## To-Do
+- Better HTML Rewriter
+- Better JS Rewriter
+- Better Cookie Support
+- LocalStorage Proxying
+- More Native Browser Functions
+- Better Headers Code
+- Single File Version
+- Youtube UI Fix
+
 ## Supported Sites
 ### Github
 Supported + Login (Some Parts of Dashboard Unsupported
