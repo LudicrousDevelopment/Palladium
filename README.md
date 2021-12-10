@@ -65,7 +65,7 @@ const http = require("http");
 ```js
 var server = http.createServer();
 
-proxy.clientScript().ws(server);
+proxy.init();
 
 server.on("request", (req, res) => {
   if (req.url.startsWith(proxy.prefix)) return proxy.request(req, res)
@@ -77,21 +77,21 @@ server.on("request", (req, res) => {
 ```js
 const Palladium = require("palladiumub");
 
-const proxy = new Palladium({
-  "prefix": "/service/",
-  "ssl": true,
-  "encode": "xor",
-  "title": "Service",
-  "requestMiddleware": [
-    Palladium.blackList(["any-link.com", "accounts.google.com"], "Page is Blocked by Host")
-  ]
-});
-
 const http = require("http");
 
 var server = http.createServer();
 
-proxy.clientScript().ws(server);
+const proxy = new Palladium({
+  "prefix": "/service/",
+  "encode": "xor",
+  "title": "Service",
+  "requestMiddleware": [
+    Palladium.blackList(["any-link.com", "accounts.google.com"], "Page is Blocked by Host")
+  ],
+  server: server,
+});
+
+proxy.init();
 
 server.on("request", (req, res) => {
   if (req.url.startsWith(proxy.prefix)) return proxy.request(req, res)
