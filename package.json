@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node ./examples/aero-troll"
+    "start": "node ./examples/http-server"
   },
   "keywords": [],
   "author": "EnderKingJ",

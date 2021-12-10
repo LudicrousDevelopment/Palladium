@@ -4,16 +4,16 @@
       {
         "id": "528dfe71-d350-4b21-96cb-8309f7d45896",
         "line": 188,
-        "version": 1497,
-        "index": 7938
+        "version": 1494,
+        "index": 7937
       }
     ],
     "lib/client/xml.js": [
       {
         "id": "50ac4516-a4cd-4977-bc66-32bdb2d88228",
         "line": 93,
-        "version": 3304,
-        "index": 2599
+        "version": 3290,
+        "index": 2587
       }
     ],
     "lib/rewrites/base.js": [
@@ -34,16 +34,16 @@
       {
         "id": "7ec93281-3fc2-47d1-a02b-5635fece6d5d",
         "line": 174,
-        "version": 6543,
-        "index": 7135
+        "version": 6516,
+        "index": 7069
       }
     ],
     "lib/server/websocket.js": [
       {
         "id": "7d6a30b1-36ea-4fa7-a50e-41152a3f5065",
-        "line": 98,
-        "version": 1837,
-        "index": 3907
+        "line": 94,
+        "version": 1738,
+        "index": 3737
       }
     ]
   }
