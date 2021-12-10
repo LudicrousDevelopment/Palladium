@@ -1,2 +1,2 @@
 run = "node ./examples/middleware-server"
-language = "node"
+language = "nodejs"
