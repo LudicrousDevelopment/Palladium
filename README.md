@@ -56,7 +56,9 @@ const http = require("http");
   "title": "Service",
   "requestMiddleware": [
     Palladium.blackList(["discord.com", "accounts.google.com"], "Page is Blocked by Host")
-  ]
+  ],
+  Corrosion: [false, {}]
+  server: your-http-server
 }
 ```
 ### Server
