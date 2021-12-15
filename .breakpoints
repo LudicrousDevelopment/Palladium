@@ -19,23 +19,23 @@
     "lib/rewrites/base.js": [
       {
         "id": "8edd9089-a8e0-403c-bce3-e8d7866ebdc2",
-        "line": 14,
-        "version": 1,
-        "index": 333
+        "line": 79,
+        "version": 2,
+        "index": 2585
       },
       {
         "id": "9266e5f1-752c-4a35-889a-dc389fd29be1",
-        "line": 78,
-        "version": 1,
-        "index": 2477
+        "line": 79,
+        "version": 2,
+        "index": 2585
       }
     ],
     "lib/server/handleRequest.js": [
       {
         "id": "7ec93281-3fc2-47d1-a02b-5635fece6d5d",
         "line": 176,
-        "version": 114,
-        "index": 7159
+        "version": 129,
+        "index": 7162
       }
     ],
     "lib/server/websocket.js": [
