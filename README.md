@@ -4,7 +4,7 @@ Secondary Web Proxy to the Likes of Womginx and Corrosion.
 Made by EnderKingJ
 
 ## Hosting Services
-<a href="https://heroku.com/deploy?template=https://github.com/LudicrousDevelopment/Palladium"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
+<a href="https://heroku.com/deploy?template=https://github.com/22boohoo/Palladium"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
 <a href="https://repl.it/github/LudicrousDevelopment/Palladium"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
 <a href="https://glitch.com/edit/#!/import/github/LudicrousDevelopment/Palladium"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
 
