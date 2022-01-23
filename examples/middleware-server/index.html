@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palladium</title>
+    <title>Cloud</title>
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/fognetwork/smoke/public/assets/logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <style>
@@ -133,31 +133,126 @@
     </style>
   </head>
   <body>
+  	<div id="particles-js"></div>
     <div class="page-container">
       <form class="container-main" method="POST" action="/service/gateway">
         <center>
-        <span class="title">Palladium</span>
+        <span class="title">Cloudy</span>
         </center>
         <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate">Go</button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
         <center>
-          <a href="/service/gateway/?url=https://www.google.com/"><i class="fab fa-google" style="color: white;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://youtube.com"><i class="fab fa-youtube" style="color: red;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://discord.com/app"><i class="fab fa-discord" style="color: #5165f6;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://reddit.com"><i class="fab fa-reddit" style="color: #f24100;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://twitch.tv"><i class="fab fa-twitch" style="color: #8a43f2;font-size:30px;"></i></a>
+
         </center>
-        <p id="about-desc1">Palladium is a web proxy developed by <a style=text-decoration:none;color:#fff;font-weight:bold; href="//github.com/EnderKingJ">EnderKingJ</a>
-        <center>
-        <a id="github" href="https://github.com/FogNetwork/Palladium"><i class="fab fa-github"></i></a>
-        </center>
-        <datalist id="urls">
-            <option>https://google.com</option>
-            <option>https://youtube.com</option>
-            <option>https://discord.com</option>
-            <option>https://reddit.com</option>
-            <option>https://twitch.tv</option>
-        </datalist>
+        <p id="about-desc1">Cloudy is a new proxy runnning on Palladium. Its immersive in bringing the user web freedom.
+
       </form>
     </div>
+    <script>
+    particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 700
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 10,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+    </script>
   </body>
 </html>
