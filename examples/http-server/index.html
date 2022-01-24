@@ -3,153 +3,97 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud</title>
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/fognetwork/smoke/public/assets/logo.svg">
+    <title>Dreamy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <style>
-      @font-face {
-        font-family: "Garamond Pro";
-        src: url('agaramondpro.otf')
-      }
-
-
-      body {
-        background: #cce6ff;
-        color: #fff;
-        text-align: center;
-        font-family: "Garamond Pro", sans-serif
-      }
-
-      .page-container {
-        width: 90%;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 500px;
-        border: 1px #eee;
-        border-radius: 2px;
-      }
-
-      #about-title1 {
-        margin-left: 10px;
-        margin-top: 20px;
-        font-size: 28px;
-      }
-
-      #about-desc1 {
-        text-align: center;
-      }
-
-      .fab {
-        margin-right: 3px !important;
-      }
-
-      #github {
-        color: white;
-        font-size: 30px;
-      }
-
-      .title {
-        font-size: 45px;
-        margin-left: 10px;
-      }
-
-      #url-input {
-      	border-radius: 20px;
-        margin-top: 20px;
-        background: #e6f3ff;
-        border: 2px solid rgb(255,255,255);
-        height: 40px;
-        margin-left: 10px;
-        padding-left: 10px;
-        width: calc(100% - 80px);
-        color: #fff;
-        outline: none;
-        transition: background-color 0.2s ease-in-out;
-      }
-
-      #url-input::placeholder {
-        color: #4da9ff;
-        font-size: 15px;
-        
-      }
-
-      #url-input:hover {
-        background: #cce6ff;
-      }
-
-      #url-input:focus {
-        background: #2d3033;
-      }
-
-      #initiate {
-      	border-radius: 15px;
-        vertical-align: top;
-        height: 44px;
-        margin-top: 20px;
-        outline: none;
-        width: 40px;
-        margin-left: 5px;
-        color: #4da9ff;
-        font-size: 15px;
-        border: 2px solid rgb(255, 255, 255);
-        background: #e6f3ff;
-        transition: background-color 0.5s ease-in-out;
-      }
-
-      #initiate:hover {
-        cursor: pointer;
-        background: #cce6ff;
-      }
-
-      .container-main {
-      	margin-left: -3%;
-        background: #99ceff;
-        border-radius: 20px;
-        border: 5px solid rgb(255,255,255);
-        padding: 28px 0px;
-        text-align: left;
-        width: 105%;
-        height: auto;
-      }
-
-      #error-disc {
-        text-align: center;
-        /*margin-top: 0;*/
-        padding: 15px;
-        margin-top: 17px !important;
-        background: rgb(217, 137, 137);
-        width: calc(100% - 52px);
-        margin: auto;
-        display: none;
-        border: 1px solid;
-        border-color: rgb(236, 236, 236)
-      }
-
-      .fab {
-        display: inline-block;
-      }
-      
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="particle.css" rel="stylesheet" type="text/css" />
+    
   </head>
+  
   <body>
-  	<div id="particles-js"></div>
+    <div id="particle-container"> 
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+  </div>
+  	
     <div class="page-container">
-      <form class="container-main" method="POST" action="/service/gateway">
+      <form class="container-main" method="POST" action="/service/gateway" id="main">
         <center>
-        <span class="title">Cloudy</span>
+        <span class="title">Dreamy</span>
         </center>
         <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate">Go</button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
         <center>
-
+		
         </center>
-        <p id="about-desc1">Cloudy is a new proxy runnning on Palladium. Its immersive in bringing the user web freedom.
+        <p id="about-desc1">Dreamy is a new proxy runnning on Palladium. Its immersive in bringing the user web freedom.
 
       </form>
     </div>
+    <div class="page-container">
+      <form class="container-sub" id="sub">
+        <center>
+         
+         <button type="button" onclick="comm()" id="com">C o m m u n i t y</button>
+         <button type="button" onclick="credits()" id="credit">C r e d i t s</button>
+         <button type="button" onclick="g4mesplace()" id="g4mes">G a m e s</button>
+         <button type="button" onclick="cloaktab()" id="cloak">C l o a k</button>
+         <button type="button" onclick="settings()" id="setting">S e t t i n g s</button>
+        
+        
+           <button type="button" onclick="titanium()" id="discord1">T i t a n i u m &nbsp; N e t w o r k</button>
+           <button type="button" onclick="skynet()" id="discord2">S k y &nbsp; N e t w o r k</button>
+            <button type="button" onclick="CloudMode()" id="cloudmode">C l o u d &nbsp; M o d e </button>
+            <button type="button" onclick="DarkMode()" id="darkmode">D a r k &nbsp; M o d e </button>
+            <button type="button" onclick="ScifiMode()" id="scifimode">S c i &nbsp;- f i &nbsp; M o d e </button>
+            <button type="button" onclick="GalaxyMode()" id="galaxymode">G a l a x y &nbsp; M o d e </button>
+          
+           
+        
+         
+         
 
+
+        </center>
+      </form>
+    </div>
+    <div>
+     
+    </div>
+    
+     <script type="text/javascript" 
+         src="script.js">  
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  
+</script>
   </body>
 </html>
