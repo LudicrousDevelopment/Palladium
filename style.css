@@ -1,0 +1,386 @@
+@font-face {
+        font-family: "Garamond Pro";
+        src: url('agaramondpro.otf')
+      }
+
+
+      body {
+        background: #cce6ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Garamond Pro", sans-serif
+      }
+      .dark-mode {
+          background: #042041;
+          color: white;
+      }
+      .scifi-mode {
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(0, 153, 255),rgb(70, 2, 126) );
+      }
+      .galaxy-mode {
+          
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(0, 153, 255),rgb(70, 2, 126) );
+          
+          color: rgb(255, 255, 255);
+      }
+
+      .page-container {
+        width: 90%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 500px;
+        border: 1px #eee;
+        border-radius: 2px;
+      }
+
+      #about-title1 {
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 28px;
+      }
+
+      #about-desc1 {
+        text-align: center;
+      }
+
+      .fab {
+        margin-right: 3px !important;
+      }
+
+      #github {
+        color: white;
+        font-size: 30px;
+      }
+
+      .title {
+        font-size: 45px;
+        margin-left: 10px;
+      }
+
+      #url-input {
+      	border-radius: 20px;
+        margin-top: 20px;
+        background: #e6f3ff;
+        border: 2px solid rgb(255,255,255);
+        height: 40px;
+        margin-left: 10px;
+        padding-left: 10px;
+        width: calc(100% - 80px);
+        color: #fff;
+        outline: none;
+        transition: background-color 0.2s ease-in-out;
+      }
+      .scifi-mode3 {
+         
+      }
+      #url-input::placeholder {
+        color: #4da9ff;
+        font-size: 15px;    
+      }
+      
+
+      #url-input:hover {
+        background: #cce6ff;
+      }
+
+      #url-input:focus {
+        background: #2d3033;
+      }
+
+      #initiate {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 20px;
+        outline: none;
+        width: 40px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      #initiate:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #g4mes {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 120px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+
+      #g4mes:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #com {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 150px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      #discord1{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 300px;
+        margin-left: 300%;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #discord2:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #discord2{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 300px;
+        margin-left: 300%;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #discord1:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #darkmode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #darkmode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 0px;
+        outline: none;
+        width: 300px;
+        margin-left: 300%;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #darkmode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #cloudmode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 0px;
+        outline: none;
+        width: 300px;
+        margin-left: 300%;
+        color: #fff;
+        font-size: 15px;
+        border: 4px solid #99ff99;
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #cloudmode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #scifimode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 0px;
+        outline: none;
+        width: 300px;
+        margin-left: 300%;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      #galaxymode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #galaxymode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: -100px;
+        outline: none;
+        width: 300px;
+        margin-left: 300%;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      #setting:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #setting {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 150px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #cloak:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #cloak {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 150px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #credit:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #credit{
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 150px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      #com:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      .container-sub {
+        margin-top: 305px;
+      	margin-left: -3%;
+        background: #99ceff;
+        border-radius: 20px;
+        border: 5px solid rgb(255,255,255);
+        text-align: left;
+        width: 105%;
+        height: 100px;
+      }
+      .dark-mode2 {
+          background: #09376b;
+          border: 5px solid rgb(255,255,255);
+      }
+      .scifi-mode2 {
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(140, 209, 255), rgb(72, 200, 255));
+          color: rgb(255, 255, 255);
+      }
+      .galaxy-mode2 {
+          
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(161, 140, 255), rgb(98, 63, 255));
+          color: rgb(255, 255, 255);
+          width: 105%;
+      }
+      .container-main {
+      	margin-left: -3%;
+        background: #99ceff;
+        border-radius: 20px;
+        border: 5px solid rgb(255,255,255);
+        padding: 28px 0px;
+        text-align: left;
+        width: 105%;
+        height: auto;
+      }
+      .dark-mode1 {
+          background: #09376b;
+      }
+      .scifi-mode1 {
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(140, 209, 255), rgb(72, 200, 255));
+          color: rgb(255, 255, 255);
+      }
+      .galaxy-mode1 {
+          width: 105%;
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(161, 140, 255), rgb(98, 63, 255));
+          color: rgb(255, 255, 255);
+      }
+      
+
+      #error-disc {
+        text-align: center;
+        /*margin-top: 0;*/
+        padding: 15px;
+        margin-top: 17px !important;
+        background: rgb(217, 137, 137);
+        width: calc(100% - 52px);
+        margin: auto;
+        display: none;
+        border: 1px solid;
+        border-color: rgb(236, 236, 236)
+      }
+
+      .fab {
+        display: inline-block;
+      }
+      
