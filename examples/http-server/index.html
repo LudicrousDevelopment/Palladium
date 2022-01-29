@@ -85,17 +85,22 @@
         height: 40px;
         margin-left: 10px;
         padding-left: 10px;
-        width: calc(100% - 85px);
+        width: calc(100% - 80px);
         color: #fff;
         outline: none;
+        z-index: 100;
+        position: relative;
+        overflow: auto !important;
         transition: background-color 0.2s ease-in-out;
+       
       }
       .scifi-mode3 {
          
       }
       #url-input::placeholder {
         color: #4da9ff;
-        font-size: 15px;    
+        font-size: 15px;   
+        z-index: 100; 
       }
       
 
@@ -119,7 +124,10 @@
         font-size: 15px;
         border: 2px solid rgb(255, 255, 255);
         background: #ffd152;
+        position: relative;
+        z-index: 102;
         transition: background-color 0.5s ease-in-out;
+        
       }
 
       #initiate:hover {
@@ -129,7 +137,7 @@
       #g4mes {
       	border-radius: 15px;
         vertical-align: top;
-        height: 44px;
+        height: 30px;
         margin-top: 30px;
         outline: none;
         width: 120px;
@@ -1162,13 +1170,13 @@
       <div class="particle"></div>
       <div class="particle"></div>
   </div>
-  	
+  <div class="page-container">
     <form class="container-main" method="POST"
     id = "main" action="/service/gateway">
         <center>
         <span class="title">Cloudy</span>
         </center>
-        <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate"> </button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
+        <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate"></button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
         <center>
           
         </center>
@@ -1176,9 +1184,9 @@
         
         
       </form>
-    </div>
+   
     <div class="page-container">
-      <form class="container-sub" id="sub">
+      <form class="container-sub" id="sub" >
         <center>
          
          <button type="button" onclick="comm()" id="com">C o m m u n i t y</button>
@@ -1203,7 +1211,7 @@
 
         </center>
       </form>
-    </div>
+
     <div>
      
     </div>
