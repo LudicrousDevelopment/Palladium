@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloudy</title>
+    <title>Mybib</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <style>
       @font-face {
@@ -17,6 +17,8 @@
       html, body {
           max-width: 100%;
           overflow-x: hidden;
+          overflow-y: hidden;
+          
       }
       body {
         background: #cce6ff;
@@ -41,8 +43,9 @@
       }
 
       .page-container {
-        width: 90%;
+        width: 92%;
         margin: auto;
+        margin-top: 100%;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -82,9 +85,8 @@
         margin-top: 20px;
         background: #e6f3ff;
         border: 2px solid rgb(255,255,255);
-        height: 40px;
-        margin-left: 10px;
-        padding-left: 10px;
+        height: 50px;
+        margin-left: 30px;
         width: calc(100% - 80px);
         color: #fff;
         outline: none;
@@ -103,7 +105,7 @@
         z-index: 100; 
       }
       
-
+      
       #url-input:hover {
         background: #cce6ff;
       }
@@ -359,8 +361,8 @@
         border-radius: 20px;
         border: 5px solid rgb(255,255,255);
         text-align: left;
-        width: 105%;
-        height: 100px;
+        width: 100%;
+        height: 100%;
       }
       .dark-mode2 {
           background: #09376b;
@@ -385,8 +387,8 @@
         border: 5px solid rgb(255,255,255);
         padding: 28px 0px;
         text-align: left;
-        width: 95%;
-        height: auto;
+        width: 100%;
+        height: 30%;
       }
       .dark-mode1 {
           background: #09376b;
@@ -412,6 +414,7 @@
         background: rgb(217, 137, 137);
         width: calc(100% - 52px);
         margin: auto;
+        border-radius: 20px;
         display: none;
         border: 1px solid;
         border-color: rgb(236, 236, 236)
@@ -1138,92 +1141,21 @@
   </head>
   
   <body>
-    <div id="particle-container"> 
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-  </div>
-  <div class="page-container">
-    <form class="container-main" method="POST"
-    id = "main" action="/service/gateway">
-        <center>
-        <span class="title">Cloudy</span>
-        </center>
-        <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate"></button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
-        <center>
-          
-        </center>
-        <p id="about-desc1">Cloudy is a new web proxy focused on  <a style=text-decoration:none;color:#fff;font-weight:bold; ">avoiding web restraints.</a>
+    
+        <iframe src="https://simplemathhelper.tk/gfiles-main/gfiles/html5/cookieclicker/" width="1200px" height="600px"></iframe>
         
         
-      </form>
+
+  
    
-    <div class="page-container">
-      <form class="container-sub" id="sub" >
-        <center>
-         
-         <button type="button" onclick="comm()" id="com">C o m m u n i t y</button>
-         <button type="button" onclick="credits()" id="credit">C r e d i t s</button>
- 
-         <button type="button" onclick="cloaktab()" id="cloak">C l o a k</button>
-         <button type="button" onclick="settings()" id="setting">S e t t i n g s</button>
-        
-        
-           <button type="button" onclick="titanium()" id="discord1">T i t a n i u m &nbsp; N e t w o r k</button>
-           <button type="button" onclick="skynet()" id="discord2">S k y &nbsp; N e t w o r k</button>
-            <button type="button" onclick="CloudMode()" id="cloudmode">C l o u d &nbsp; M o d e </button>
-            <button type="button" onclick="DarkMode()" id="darkmode">D a r k &nbsp; M o d e </button>
-            <button type="button" onclick="ScifiMode()" id="scifimode">S c i &nbsp;- f i &nbsp; M o d e </button>
-            <button type="button" onclick="GalaxyMode()" id="galaxymode">G a l a x y &nbsp; M o d e </button>
-            <p id="credittext">Cloudy was designed by <a style=text-decoration:none;color:#fff;font-weight:bold; href="https://discord.gg/nuQN7GZUfH" target="_blank">Cloud Net</a>. Palladium was used for the proxy (Palladium was made by <a style=text-decoration:none;color:#fff;font-weight:bold; href="//github.com/EnderKingJ" target= "_blank">EnderKingJ</a>).</p>
-           
-        
-         
-         
-
-
-        </center>
-      </form>
+   
+  
 
     <div>
-     
-    </div>
+    
     
      <script>
-       let comopen = false
-let setopen = false
-let cloud  = true
-let dark = false
-let scifi = false
-let galaxy = false
-let credit = false
+
 function changeFavicon(text) {
   const canvas = document.createElement('canvas');
   canvas.height = 64;
@@ -1240,195 +1172,8 @@ function changeFavicon(text) {
   link.href = canvas.toDataURL();
   document.head.appendChild(link);
 }
-changeFavicon('☁️');
-function check()
-{
-  
-}
-function clear()
-{
-  document.getElementById("sub").style.height = "100px"; //make its size normal
-  document.getElementById("discord2").style.marginLeft = "5000px"; //make it disappear
-  document.getElementById("discord1").style.marginLeft = "5000px"; //make it disappear
-  document.getElementById("darkmode").style.marginLeft = "5000px"; //make it disappear
-  document.getElementById("scifimode").style.marginLeft = "5000px"; //make it disappear
-  document.getElementById("galaxymode").style.marginLeft = "5000px";
-  document.getElementById("cloudmode").style.marginLeft = "5000px";
-  document.getElementById("credittext").style.marginLeft = "5000px";
-}
+changeFavicon('📚');
 
-
-
-function comm()
-{
-  if(comopen == false)
-  {
-    comopen = true
-    clear();
-    document.getElementById("sub").style.height = "200px";
-    document.getElementById("discord2").style.marginLeft = "0px";
-    document.getElementById("discord1").style.marginLeft = "0px";
-  }else{
-    
-    comopen = false;
-    clear();
-  }
-  
-} 
-//https://discord.gg/unblock --TN(Titanium Network) invite link
-//https://discord.gg/nuQN7GZUfH  --SN(Sky Network) invite link
- 
-
-function titanium()
-{
-   window.open( "https://discord.gg/unblock", "_blank");
-}
-function skynet()
-{
-   window.open( "https://discord.gg/nuQN7GZUfH", "_blank");
-}
-
-function settings()
-{     if (setopen == false){
-        clear();
-        document.getElementById("sub").style.height = "350px";
-        document.getElementById("darkmode").style.marginLeft = "0px";
-        document.getElementById("scifimode").style.marginLeft = "0px";
-        document.getElementById("galaxymode").style.marginLeft = "0px";
-        document.getElementById("cloudmode").style.marginLeft = "0px";
-        document.getElementById("darkmode").style.marginTop = "0px";
-        document.getElementById("scifimode").style.marginTop = "0px";
-        document.getElementById("galaxymode").style.marginTop = "0px";
-        document.getElementById("cloudmode").style.marginTop = "0px";
-        setopen = true;
-      }else{
-
-        setopen = false;
-        clear();
-      }
-
-
-}
-function CloudMode() {
-  if(cloud == false)
-  {
-    document.getElementById("cloudmode").style.borderColor = "#fff"
-    document.getElementById("cloudmode").style.borderWidth = "2px" 
-    if(dark == false)
-    {
-      if(dark == false)
-      {
-        if(dark == false)
-        {
-      
-        }
-      }
-    }
-    
-    cloud = true;
-  }else{
-    
-    document.getElementById("cloudmode").style.borderColor = "#99ff99"
-    document.getElementById("cloudmode").style.borderWidth = "4px"
-    cloud = false;
-  }
-}
-
-
-
-function credits()
-{
-  if(credit == false)
-  {
-    credit = true
-    clear();
-    document.getElementById("sub").style.height = "200px";
-  document.getElementById("credittext").style.marginLeft = "0%";
-  }else{
-    
-    credit = false;
-    clear();
-  }
-  
-  
-}
-
-function cloaktab()
-{
-  document.title = "MyBib ";
-
-  changeFavicon('📚');
-}
-function DarkMode() {
-  if(dark == false)
-  {
-    
-    document.getElementById("darkmode").style.borderColor = "#99ff99"
-    document.getElementById("darkmode").style.borderWidth = "4px"
-    dark = true;
-  }else{
-    document.getElementById("darkmode").style.borderColor = "#fff"
-    document.getElementById("darkmode").style.borderWidth = "2px"
-    dark = false;
-  }
-  
-    var element1 = document.body;
-    element1.classList.toggle("dark-mode");
-    var element2 = document.getElementById("sub");
-    element2.classList.toggle("dark-mode2");
-    var element3 = document.getElementById("main");
-    element3.classList.toggle("dark-mode1");
-    var element3 = document.getElementById("url-input");
-    element3.classList.toggle("dark-mode3");
-  
-  
-}
-function ScifiMode() {
-  if(scifi == false)
-  {
-    
-    document.getElementById("scifimode").style.borderColor = "#99ff99"
-    document.getElementById("scifimode").style.borderWidth = "4px"
-    scifi = true;
-  }else{
-    document.getElementById("scifimode").style.borderColor = "#fff"
-    document.getElementById("scifimode").style.borderWidth = "2px"
-    scifi = false;
-  }
-  
-    var element1 = document.body;
-    element1.classList.toggle("scifi-mode");
-    var element2 = document.getElementById("sub");
-    element2.classList.toggle("scifi-mode2");
-    var element3 = document.getElementById("main");
-    element3.classList.toggle("scifi-mode1");
-}
-
-function GalaxyMode() {
-  if(galaxy == false)
-  {
-    
-    document.getElementById("galaxymode").style.borderColor = "#99ff99"
-    document.getElementById("galaxymode").style.borderWidth = "4px"
-    galaxy = true;
-  }else{
-    document.getElementById("galaxymode").style.borderColor = "#fff"
-    document.getElementById("galaxymode").style.borderWidth = "2px"
-    galaxy = false;
-  } 
-    var element1 = document.body;
-    element1.classList.toggle("galaxy-mode");
-    var element2 = document.getElementById("sub");
-    element2.classList.toggle("galaxy-mode2");
-    var element3 = document.getElementById("main");
-    element3.classList.toggle("galaxy-mode1");
-}
-
-function g4mesplace()
-{
-  document.getElementById("sub").style.height = "350px";
-  console.log("games are not ready.")
-}
 
 </script>
   
