@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <!-- Code belongs to "dream team" of sky netowrk. Any stolen/mis-used is not allowed. All front-end code belongs to the creators of Sky Network.-->
+
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palladium</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/FogNetwork/Smoke/22a012c8292b1750f078af0bb5890c604edfcedd/public/assets/logo.svg">
+    <title>Mybib</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <style>
       @font-face {
@@ -12,17 +14,38 @@
         src: url('agaramondpro.otf')
       }
 
-
+      html, body {
+          max-width: 100%;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          
+      }
       body {
-        background: #1d232b;
+        background: #cce6ff;
         color: #fff;
         text-align: center;
         font-family: "Garamond Pro", sans-serif
       }
+      .dark-mode {
+          background: #042041;
+          color: white;
+      }
+      .scifi-mode {
+          background-color: #cccccc;
+          background-image:https://i.imgur.com/YJOX1PC.png;
+      }
+      .galaxy-mode {
+          
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(0, 153, 255),rgb(70, 2, 126) );
+          
+          color: rgb(255, 255, 255);
+      }
 
       .page-container {
-        width: 90%;
+        width: 92%;
         margin: auto;
+        margin-top: 100%;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -58,26 +81,33 @@
       }
 
       #url-input {
+      	border-radius: 20px;
         margin-top: 20px;
-        background: #1e2022;
-        border: 1px solid rgb(136, 136, 136);
-        height: 40px;
-        margin-left: 10px;
-        padding-left: 10px;
+        background: #e6f3ff;
+        border: 2px solid rgb(255,255,255);
+        height: 50px;
+        margin-left: 30px;
         width: calc(100% - 80px);
         color: #fff;
         outline: none;
+        z-index: 100;
+        position: relative;
+        overflow: auto !important;
         transition: background-color 0.2s ease-in-out;
+       
       }
-
+      .scifi-mode3 {
+         
+      }
       #url-input::placeholder {
-        color: #bbb;
-        font-size: 15px;
-        
+        color: #4da9ff;
+        font-size: 15px;   
+        z-index: 100; 
       }
-
+      
+      
       #url-input:hover {
-        background: #2d3033;
+        background: #cce6ff;
       }
 
       #url-input:focus {
@@ -85,33 +115,296 @@
       }
 
       #initiate {
+      	border-radius: 15px;
         vertical-align: top;
         height: 44px;
         margin-top: 20px;
         outline: none;
         width: 40px;
         margin-left: 5px;
-        color: #eee;
+        color: #4da9ff;
         font-size: 15px;
-        border: 1px solid rgb(136, 136, 136);
-        background: #1e2022;
+        border: 2px solid rgb(255, 255, 255);
+        background: #ffd152;
+        position: relative;
+        z-index: 102;
         transition: background-color 0.5s ease-in-out;
+        
       }
 
       #initiate:hover {
         cursor: pointer;
-        background: #2d3033;
+        background: #42f57e;;
+      }
+      #g4mes {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 30px;
+        margin-top: 30px;
+        outline: none;
+        width: 120px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
       }
 
+      #g4mes:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #com {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 200px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      #discord1{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 50%;
+        margin-left: 5000px;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #discord2:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #discord2{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 50%;
+        margin-left: 5000px;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #discord1:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #darkmode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #darkmode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 0px;
+        outline: none;
+        width: 300px;
+        margin-left: 5000px;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #darkmode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #cloudmode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 0px;
+        outline: none;
+        width: 300px;
+        margin-left: 5000px;
+        color: #fff;
+        font-size: 15px;
+        border: 4px solid #99ff99;
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #cloudmode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #scifimode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #scifimode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: 0px;
+        outline: none;
+        width: 300px;
+        margin-left: 5000px;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      #galaxymode:hover {
+        cursor: pointer;
+        background: #5892c9;
+      }
+      #galaxymode{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: -100px;
+        outline: none;
+        width: 300px;
+        margin-left: 5000px;
+        color: #fff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #6eb7fc;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #credittext{
+      	border-radius: 15px;
+        
+        height: 44px;
+        margin-top: -300px;
+        outline: none;
+        width: 100%;
+        margin-left: 5000px;
+        color: #fff;
+       
+      }
+      
+      #setting:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #setting {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 150px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #cloak:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #cloak {
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 150px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      #credit:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      #credit{
+      	border-radius: 15px;
+        vertical-align: top;
+        height: 44px;
+        margin-top: 30px;
+        outline: none;
+        width: 150px;
+        margin-left: 5px;
+        color: #4da9ff;
+        font-size: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        background: #e6f3ff;
+        transition: background-color 0.5s ease-in-out;
+      }
+      
+      #com:hover {
+        cursor: pointer;
+        background: #cce6ff;
+      }
+      .container-sub {
+        margin-top: 305px;
+      	margin-left: -3%;
+        background: #99ceff;
+        border-radius: 20px;
+        border: 5px solid rgb(255,255,255);
+        text-align: left;
+        width: 100%;
+        height: 100%;
+      }
+      .dark-mode2 {
+          background: #09376b;
+          border: 5px solid rgb(255,255,255);
+      }
+      .scifi-mode2 {
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(140, 209, 255), rgb(72, 200, 255));
+          color: rgb(255, 255, 255);
+      }
+      .galaxy-mode2 {
+          
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(161, 140, 255), rgb(98, 63, 255));
+          color: rgb(255, 255, 255);
+
+      }
       .container-main {
-        background: #181c20;
-        border-radius: 1px;
-        border: 1px solid rgb(136, 136, 136);
+      	margin-left: 1.57%;
+        background: #99ceff;
+        border-radius: 20px;
+        border: 5px solid rgb(255,255,255);
         padding: 28px 0px;
         text-align: left;
         width: 100%;
-        height: auto;
+        height: 30%;
       }
+      .dark-mode1 {
+          background: #09376b;
+      }
+      .scifi-mode1 {
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(140, 209, 255), rgb(72, 200, 255));
+          color: rgb(255, 255, 255);
+      }
+      .galaxy-mode1 {
+          width: 95%;
+          background-color: #cccccc;
+          background-image: radial-gradient(rgb(161, 140, 255), rgb(98, 63, 255));
+          color: rgb(255, 255, 255);
+      }
+      
 
       #error-disc {
         text-align: center;
@@ -121,6 +414,7 @@
         background: rgb(217, 137, 137);
         width: calc(100% - 52px);
         margin: auto;
+        border-radius: 20px;
         display: none;
         border: 1px solid;
         border-color: rgb(236, 236, 236)
@@ -129,35 +423,761 @@
       .fab {
         display: inline-block;
       }
+      .particle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes particle-animation-1 {
+  100% {
+    transform: translate3d(86vw, 74vh, 63px);
+  }
+}
+
+@keyframes particle-animation-1 {
+  100% {
+    transform: translate3d(86vw, 74vh, 63px);
+  }
+}
+.particle:nth-child(1) {
+  -webkit-animation: particle-animation-1 60s infinite;
+          animation: particle-animation-1 60s infinite;
+  opacity: 0.32;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  transform: translate3d(31vw, 88vh, 47px);
+  background: #6bd926;
+}
+
+@-webkit-keyframes particle-animation-2 {
+  100% {
+    transform: translate3d(52vw, 52vh, 73px);
+  }
+}
+
+@keyframes particle-animation-2 {
+  100% {
+    transform: translate3d(52vw, 52vh, 73px);
+  }
+}
+.particle:nth-child(2) {
+  -webkit-animation: particle-animation-2 60s infinite;
+          animation: particle-animation-2 60s infinite;
+  opacity: 0.16;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+  transform: translate3d(65vw, 58vh, 51px);
+  background: #26c1d9;
+}
+
+@-webkit-keyframes particle-animation-3 {
+  100% {
+    transform: translate3d(27vw, 67vh, 82px);
+  }
+}
+
+@keyframes particle-animation-3 {
+  100% {
+    transform: translate3d(27vw, 67vh, 82px);
+  }
+}
+.particle:nth-child(3) {
+  -webkit-animation: particle-animation-3 60s infinite;
+          animation: particle-animation-3 60s infinite;
+  opacity: 0.61;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  transform: translate3d(70vw, 27vh, 25px);
+  background: #b5d926;
+}
+
+@-webkit-keyframes particle-animation-4 {
+  100% {
+    transform: translate3d(58vw, 20vh, 18px);
+  }
+}
+
+@keyframes particle-animation-4 {
+  100% {
+    transform: translate3d(58vw, 20vh, 18px);
+  }
+}
+.particle:nth-child(4) {
+  -webkit-animation: particle-animation-4 60s infinite;
+          animation: particle-animation-4 60s infinite;
+  opacity: 0.75;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  transform: translate3d(47vw, 74vh, 14px);
+  background: #d92688;
+}
+
+@-webkit-keyframes particle-animation-5 {
+  100% {
+    transform: translate3d(35vw, 38vh, 31px);
+  }
+}
+
+@keyframes particle-animation-5 {
+  100% {
+    transform: translate3d(35vw, 38vh, 31px);
+  }
+}
+.particle:nth-child(5) {
+  -webkit-animation: particle-animation-5 60s infinite;
+          animation: particle-animation-5 60s infinite;
+  opacity: 0.7;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  transform: translate3d(75vw, 5vh, 99px);
+  background: #d92635;
+}
+
+@-webkit-keyframes particle-animation-6 {
+  100% {
+    transform: translate3d(24vw, 50vh, 36px);
+  }
+}
+
+@keyframes particle-animation-6 {
+  100% {
+    transform: translate3d(24vw, 50vh, 36px);
+  }
+}
+.particle:nth-child(6) {
+  -webkit-animation: particle-animation-6 60s infinite;
+          animation: particle-animation-6 60s infinite;
+  opacity: 0.71;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  transform: translate3d(19vw, 83vh, 80px);
+  background: #8226d9;
+}
+
+@-webkit-keyframes particle-animation-7 {
+  100% {
+    transform: translate3d(5vw, 60vh, 30px);
+  }
+}
+
+@keyframes particle-animation-7 {
+  100% {
+    transform: translate3d(5vw, 60vh, 30px);
+  }
+}
+.particle:nth-child(7) {
+  -webkit-animation: particle-animation-7 60s infinite;
+          animation: particle-animation-7 60s infinite;
+  opacity: 0.94;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+  transform: translate3d(85vw, 48vh, 52px);
+  background: #d92680;
+}
+
+@-webkit-keyframes particle-animation-8 {
+  100% {
+    transform: translate3d(26vw, 16vh, 84px);
+  }
+}
+
+@keyframes particle-animation-8 {
+  100% {
+    transform: translate3d(26vw, 16vh, 84px);
+  }
+}
+.particle:nth-child(8) {
+  -webkit-animation: particle-animation-8 60s infinite;
+          animation: particle-animation-8 60s infinite;
+  opacity: 0.2;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+  transform: translate3d(64vw, 1vh, 60px);
+  background: #2fd926;
+}
+
+@-webkit-keyframes particle-animation-9 {
+  100% {
+    transform: translate3d(35vw, 13vh, 7px);
+  }
+}
+
+@keyframes particle-animation-9 {
+  100% {
+    transform: translate3d(35vw, 13vh, 7px);
+  }
+}
+.particle:nth-child(9) {
+  -webkit-animation: particle-animation-9 60s infinite;
+          animation: particle-animation-9 60s infinite;
+  opacity: 0.37;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  transform: translate3d(57vw, 61vh, 10px);
+  background: #65d926;
+}
+
+@-webkit-keyframes particle-animation-10 {
+  100% {
+    transform: translate3d(58vw, 31vh, 70px);
+  }
+}
+
+@keyframes particle-animation-10 {
+  100% {
+    transform: translate3d(58vw, 31vh, 70px);
+  }
+}
+.particle:nth-child(10) {
+  -webkit-animation: particle-animation-10 60s infinite;
+          animation: particle-animation-10 60s infinite;
+  opacity: 0.04;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  transform: translate3d(28vw, 51vh, 23px);
+  background: #d926cd;
+}
+
+@-webkit-keyframes particle-animation-11 {
+  100% {
+    transform: translate3d(51vw, 46vh, 4px);
+  }
+}
+
+@keyframes particle-animation-11 {
+  100% {
+    transform: translate3d(51vw, 46vh, 4px);
+  }
+}
+.particle:nth-child(11) {
+  -webkit-animation: particle-animation-11 60s infinite;
+          animation: particle-animation-11 60s infinite;
+  opacity: 0.95;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+  transform: translate3d(75vw, 2vh, 59px);
+  background: #26d926;
+}
+
+@-webkit-keyframes particle-animation-12 {
+  100% {
+    transform: translate3d(78vw, 76vh, 78px);
+  }
+}
+
+@keyframes particle-animation-12 {
+  100% {
+    transform: translate3d(78vw, 76vh, 78px);
+  }
+}
+.particle:nth-child(12) {
+  -webkit-animation: particle-animation-12 60s infinite;
+          animation: particle-animation-12 60s infinite;
+  opacity: 0.93;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+  transform: translate3d(55vw, 54vh, 13px);
+  background: #97d926;
+}
+
+@-webkit-keyframes particle-animation-13 {
+  100% {
+    transform: translate3d(58vw, 41vh, 86px);
+  }
+}
+
+@keyframes particle-animation-13 {
+  100% {
+    transform: translate3d(58vw, 41vh, 86px);
+  }
+}
+.particle:nth-child(13) {
+  -webkit-animation: particle-animation-13 60s infinite;
+          animation: particle-animation-13 60s infinite;
+  opacity: 0.22;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -2.6s;
+          animation-delay: -2.6s;
+  transform: translate3d(31vw, 45vh, 64px);
+  background: #d9bb26;
+}
+
+@-webkit-keyframes particle-animation-14 {
+  100% {
+    transform: translate3d(18vw, 61vh, 43px);
+  }
+}
+
+@keyframes particle-animation-14 {
+  100% {
+    transform: translate3d(18vw, 61vh, 43px);
+  }
+}
+.particle:nth-child(14) {
+  -webkit-animation: particle-animation-14 60s infinite;
+          animation: particle-animation-14 60s infinite;
+  opacity: 0.94;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -2.8s;
+          animation-delay: -2.8s;
+  transform: translate3d(66vw, 32vh, 33px);
+  background: #d92680;
+}
+
+@-webkit-keyframes particle-animation-15 {
+  100% {
+    transform: translate3d(77vw, 10vh, 35px);
+  }
+}
+
+@keyframes particle-animation-15 {
+  100% {
+    transform: translate3d(77vw, 10vh, 35px);
+  }
+}
+.particle:nth-child(15) {
+  -webkit-animation: particle-animation-15 60s infinite;
+          animation: particle-animation-15 60s infinite;
+  opacity: 0.42;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  transform: translate3d(41vw, 69vh, 16px);
+  background: #b5d926;
+}
+
+@-webkit-keyframes particle-animation-16 {
+  100% {
+    transform: translate3d(23vw, 21vh, 84px);
+  }
+}
+
+@keyframes particle-animation-16 {
+  100% {
+    transform: translate3d(23vw, 21vh, 84px);
+  }
+}
+.particle:nth-child(16) {
+  -webkit-animation: particle-animation-16 60s infinite;
+          animation: particle-animation-16 60s infinite;
+  opacity: 0.38;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -3.2s;
+          animation-delay: -3.2s;
+  transform: translate3d(56vw, 61vh, 71px);
+  background: #d9268e;
+}
+
+@-webkit-keyframes particle-animation-17 {
+  100% {
+    transform: translate3d(83vw, 65vh, 5px);
+  }
+}
+
+@keyframes particle-animation-17 {
+  100% {
+    transform: translate3d(83vw, 65vh, 5px);
+  }
+}
+.particle:nth-child(17) {
+  -webkit-animation: particle-animation-17 60s infinite;
+          animation: particle-animation-17 60s infinite;
+  opacity: 0.51;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -3.4s;
+          animation-delay: -3.4s;
+  transform: translate3d(81vw, 17vh, 90px);
+  background: #26d9b8;
+}
+
+@-webkit-keyframes particle-animation-18 {
+  100% {
+    transform: translate3d(3vw, 1vh, 85px);
+  }
+}
+
+@keyframes particle-animation-18 {
+  100% {
+    transform: translate3d(3vw, 1vh, 85px);
+  }
+}
+.particle:nth-child(18) {
+  -webkit-animation: particle-animation-18 60s infinite;
+          animation: particle-animation-18 60s infinite;
+  opacity: 0.77;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -3.6s;
+          animation-delay: -3.6s;
+  transform: translate3d(13vw, 53vh, 19px);
+  background: #d97a26;
+}
+
+@-webkit-keyframes particle-animation-19 {
+  100% {
+    transform: translate3d(34vw, 5vh, 34px);
+  }
+}
+
+@keyframes particle-animation-19 {
+  100% {
+    transform: translate3d(34vw, 5vh, 34px);
+  }
+}
+.particle:nth-child(19) {
+  -webkit-animation: particle-animation-19 60s infinite;
+          animation: particle-animation-19 60s infinite;
+  opacity: 0.04;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -3.8s;
+          animation-delay: -3.8s;
+  transform: translate3d(9vw, 2vh, 49px);
+  background: #d0d926;
+}
+
+@-webkit-keyframes particle-animation-20 {
+  100% {
+    transform: translate3d(85vw, 60vh, 1px);
+  }
+}
+
+@keyframes particle-animation-20 {
+  100% {
+    transform: translate3d(85vw, 60vh, 1px);
+  }
+}
+.particle:nth-child(20) {
+  -webkit-animation: particle-animation-20 60s infinite;
+          animation: particle-animation-20 60s infinite;
+  opacity: 0.3;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  transform: translate3d(87vw, 36vh, 54px);
+  background: #4126d9;
+}
+
+@-webkit-keyframes particle-animation-21 {
+  100% {
+    transform: translate3d(11vw, 88vh, 98px);
+  }
+}
+
+@keyframes particle-animation-21 {
+  100% {
+    transform: translate3d(11vw, 88vh, 98px);
+  }
+}
+.particle:nth-child(21) {
+  -webkit-animation: particle-animation-21 60s infinite;
+          animation: particle-animation-21 60s infinite;
+  opacity: 0.95;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -4.2s;
+          animation-delay: -4.2s;
+  transform: translate3d(23vw, 84vh, 52px);
+  background: #2647d9;
+}
+
+@-webkit-keyframes particle-animation-22 {
+  100% {
+    transform: translate3d(24vw, 20vh, 12px);
+  }
+}
+
+@keyframes particle-animation-22 {
+  100% {
+    transform: translate3d(24vw, 20vh, 12px);
+  }
+}
+.particle:nth-child(22) {
+  -webkit-animation: particle-animation-22 60s infinite;
+          animation: particle-animation-22 60s infinite;
+  opacity: 0.93;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -4.4s;
+          animation-delay: -4.4s;
+  transform: translate3d(45vw, 47vh, 93px);
+  background: #d3d926;
+}
+
+@-webkit-keyframes particle-animation-23 {
+  100% {
+    transform: translate3d(38vw, 76vh, 46px);
+  }
+}
+
+@keyframes particle-animation-23 {
+  100% {
+    transform: translate3d(38vw, 76vh, 46px);
+  }
+}
+.particle:nth-child(23) {
+  -webkit-animation: particle-animation-23 60s infinite;
+          animation: particle-animation-23 60s infinite;
+  opacity: 0.68;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -4.6s;
+          animation-delay: -4.6s;
+  transform: translate3d(32vw, 63vh, 2px);
+  background: #26d9ac;
+}
+
+@-webkit-keyframes particle-animation-24 {
+  100% {
+    transform: translate3d(24vw, 1vh, 91px);
+  }
+}
+
+@keyframes particle-animation-24 {
+  100% {
+    transform: translate3d(24vw, 1vh, 91px);
+  }
+}
+.particle:nth-child(24) {
+  -webkit-animation: particle-animation-24 60s infinite;
+          animation: particle-animation-24 60s infinite;
+  opacity: 0.37;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -4.8s;
+          animation-delay: -4.8s;
+  transform: translate3d(90vw, 13vh, 8px);
+  background: #d92635;
+}
+
+@-webkit-keyframes particle-animation-25 {
+  100% {
+    transform: translate3d(83vw, 17vh, 22px);
+  }
+}
+
+@keyframes particle-animation-25 {
+  100% {
+    transform: translate3d(83vw, 17vh, 22px);
+  }
+}
+.particle:nth-child(25) {
+  -webkit-animation: particle-animation-25 60s infinite;
+          animation: particle-animation-25 60s infinite;
+  opacity: 0.05;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  transform: translate3d(8vw, 77vh, 49px);
+  background: #cad926;
+}
+
+@-webkit-keyframes particle-animation-26 {
+  100% {
+    transform: translate3d(24vw, 83vh, 95px);
+  }
+}
+
+@keyframes particle-animation-26 {
+  100% {
+    transform: translate3d(24vw, 83vh, 95px);
+  }
+}
+.particle:nth-child(26) {
+  -webkit-animation: particle-animation-26 60s infinite;
+          animation: particle-animation-26 60s infinite;
+  opacity: 0.37;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -5.2s;
+          animation-delay: -5.2s;
+  transform: translate3d(34vw, 2vh, 82px);
+  background: #26d9d6;
+}
+
+@-webkit-keyframes particle-animation-27 {
+  100% {
+    transform: translate3d(10vw, 68vh, 80px);
+  }
+}
+
+@keyframes particle-animation-27 {
+  100% {
+    transform: translate3d(10vw, 68vh, 80px);
+  }
+}
+.particle:nth-child(27) {
+  -webkit-animation: particle-animation-27 60s infinite;
+          animation: particle-animation-27 60s infinite;
+  opacity: 0.28;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -5.4s;
+          animation-delay: -5.4s;
+  transform: translate3d(19vw, 64vh, 72px);
+  background: #be26d9;
+}
+
+@-webkit-keyframes particle-animation-28 {
+  100% {
+    transform: translate3d(88vw, 24vh, 93px);
+  }
+}
+
+@keyframes particle-animation-28 {
+  100% {
+    transform: translate3d(88vw, 24vh, 93px);
+  }
+}
+.particle:nth-child(28) {
+  -webkit-animation: particle-animation-28 60s infinite;
+          animation: particle-animation-28 60s infinite;
+  opacity: 0.94;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -5.6s;
+          animation-delay: -5.6s;
+  transform: translate3d(56vw, 68vh, 24px);
+  background: #26d9a3;
+}
+
+@-webkit-keyframes particle-animation-29 {
+  100% {
+    transform: translate3d(3vw, 90vh, 71px);
+  }
+}
+
+@keyframes particle-animation-29 {
+  100% {
+    transform: translate3d(3vw, 90vh, 71px);
+  }
+}
+.particle:nth-child(29) {
+  -webkit-animation: particle-animation-29 60s infinite;
+          animation: particle-animation-29 60s infinite;
+  opacity: 0.8;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -5.8s;
+          animation-delay: -5.8s;
+  transform: translate3d(77vw, 62vh, 9px);
+  background: #26afd9;
+}
+
+@-webkit-keyframes particle-animation-30 {
+  100% {
+    transform: translate3d(62vw, 16vh, 75px);
+  }
+}
+
+@keyframes particle-animation-30 {
+  100% {
+    transform: translate3d(62vw, 16vh, 75px);
+  }
+}
+.particle:nth-child(30) {
+  -webkit-animation: particle-animation-30 60s infinite;
+          animation: particle-animation-30 60s infinite;
+  opacity: 0.33;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  transform: translate3d(45vw, 71vh, 57px);
+  background: #7dd926;
+}
+@keyframes particle-animation-30 {
+  100% {
+    transform: translate3d(62vw, 16vh, 75px);
+  }
+}
+.particle:nth-child(30) {
+  -webkit-animation: particle-animation-30 60s infinite;
+          animation: particle-animation-30 60s infinite;
+  opacity: 0.33;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  transform: translate3d(45vw, 71vh, 57px);
+  background: #26d9d9;
+}
+       
       
+
     </style>
+    
   </head>
+  
   <body>
-    <div class="page-container">
-      <form class="container-main" method="POST" action="/service/gateway">
-        <center>
-        <span class="title">Palladium</span>
-        </center>
-        <input required oninvalid="(() => {this.setCustomValidity(' ');document.getElementById('error-disc').style.display = 'block'})()" onchange="" name="url" maxlength="250" id="url-input" placeholder="Search or Enter Url" list="urls"><button id="initiate">Go</button><br><p id="error-disc">Please Enter a Search Term or Url</p><br>
-        <center>
-          <a href="/service/gateway/?url=https://www.google.com/"><i class="fab fa-google" style="color: white;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://youtube.com"><i class="fab fa-youtube" style="color: red;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://discord.com/app"><i class="fab fa-discord" style="color: #5165f6;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://reddit.com"><i class="fab fa-reddit" style="color: #f24100;font-size:30px;"></i></a>
-          <a href="/service/gateway/?url=https://twitch.tv"><i class="fab fa-twitch" style="color: #8a43f2;font-size:30px;"></i></a>
-        </center>
-        <p id="about-desc1">Palladium is a web proxy developed by <a style=text-decoration:none;color:#fff;font-weight:bold; href="//github.com/EnderKingJ">EnderKingJ</a>
-        <center>
-        <a id="github" href="https://github.com/FogNetwork/Palladium"><i class="fab fa-github"></i></a>
-        </center>
-        <datalist id="urls">
-            <option>https://google.com</option>
-            <option>https://youtube.com</option>
-            <option>https://discord.com</option>
-            <option>https://reddit.com</option>
-            <option>https://twitch.tv</option>
-        </datalist>
-      </form>
-    </div>
+    
+        <iframe src="https://simplemathhelper.tk/gfiles-main/gfiles/html5/cookieclicker/" width="1200px" height="600px"></iframe>
+        
+        
+
+  
+   
+   
+  
+
+    <div>
+    
+    
+     <script>
+
+function changeFavicon(text) {
+  const canvas = document.createElement('canvas');
+  canvas.height = 64;
+  canvas.width = 64;
+  const ctx = canvas.getContext('2d');
+  ctx.font = '64px serif';
+  ctx.fillText(text, 0, 64);
+
+  const link = document.createElement('link');
+  const oldLinks = document.querySelectorAll('link[rel="shortcut icon"]');
+  oldLinks.forEach(e => e.parentNode.removeChild(e));
+  link.id = 'dynamic-favicon';
+  link.rel = 'shortcut icon';
+  link.href = canvas.toDataURL();
+  document.head.appendChild(link);
+}
+changeFavicon('📚');
+
+
+</script>
+  
+   
+
   </body>
 </html>
