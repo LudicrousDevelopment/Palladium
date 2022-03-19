@@ -1,3 +1,7 @@
+# This Proxy has been Archived.
+
+Please visit the new and better proxy, [Rhodium](https://github.com/LudicrousDevelopment/Rhodium)
+
 # Palladium
 Secondary Web Proxy to the Likes of Womginx and Corrosion.
 
